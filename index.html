@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MM-Conv</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            text-align: center;
-        }
-        .content {
-            margin-bottom: 40px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
 
-<header>
-    <h1>MM-conv</h1>
-</header>
+<body class="bg-gray-100">
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- Header Section -->
+    <header class="text-center py-8 bg-white shadow-md">
+        <h1 class="text-3xl font-bold">MM-Conv: Dataset</h1>
+        <p class="mt-2 text-gray-600">ECCV Multimodal Agents Workshop</p>
+        <p class="mt-2 text-gray-700">Anna Deichler<sup>1</sup>, Jim O'Regan<sup>2</sup>, Jonas Beskow<sup>3</sup></p>
+        
+        <div class="flex justify-center mt-4">
+            <button class="bg-purple-600 text-white px-4 py-2 rounded mx-2">Paper</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">arXiv</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Video</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Tutorial Video</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Code</button>
+        </div>
+    </header>
 
-<section id="about" class="content">
-    <h2>About</h2>
-    <p>The ......</p>
-</section>
+    <!-- Image Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center">
+                <img src="image1.png" alt="Main image" class="w-2/3">
+            </div>
+            <p class="text-center mt-4 text-lg font-semibold">Dataset visualization</p>
+            <p class="text-center mt-2 text-gray-600">Description.</p>
+        </div>
+    </section>
 
+    <!-- Carousel Section -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center space-x-4">
+                <img src="carousel_image1.png" alt="Image 1" class="w-48 h-32 object-cover">
+                <img src="carousel_image2.png" alt="Image 2" class="w-48 h-32 object-cover">
+                <img src="carousel_image3.png" alt="Image 3" class="w-48 h-32 object-cover">
+                <img src="carousel_image4.png" alt="Image 4" class="w-48 h-32 object-cover">
+            </div>
+        </div>
+    </section>
 
+    <!-- Abstract Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold">Abstract</h2>
+            <p class="mt-4 text-gray-700">
+                Human-scene interaction dataset in conversational setting.
+            </p>
+        </div>
+    </section>
 
-
-<section id="contact" class="content">
-    <h2>Contact</h2>
-    <p>For more information, please contact us at <a href="mailto:deichler@kth.se">deichler@kth.se</a>.</p>
-</section>
-
+    <!-- Approach Section -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold">Approach</h2>
+            <p class="mt-4 text-gray-700">
+               Describe approach here.
+            </p>
+        </div>
+    </section>
 
 </body>
+
 </html>
