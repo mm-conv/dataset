@@ -13,6 +13,13 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
+        /* Hover effect for Data button */
+        .hover-data:hover {
+            content: 'Soon';
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 
@@ -26,11 +33,10 @@
         <p class="mt-1 text-gray-600"><sup>1</sup>KTH Royal Institute of Technology</p>
 
         <div class="flex justify-center mt-4">
-            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Paper</button>
             <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">arXiv</button>
-            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Video</button>
-            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Tutorial Video</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2 hover-data">Data</button>
             <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2">Code</button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mx-2"><a href="https://huggingface.co/spaces/annadeichler/MM-Conv">Demo</a></button>
         </div>
     </header>
 
@@ -82,8 +88,6 @@
             </div>
         </div>
     </section>
-
-
 
         <!-- Hugging Face Space Embed Section -->
         <section class="py-8 bg-white">
