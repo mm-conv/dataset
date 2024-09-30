@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="description" content="MM-Conv: A Multi-Modal Conversational Dataset for Virtual Humans presented at ECCV Multimodal Agents Workshop.">
+<meta name="keywords" content="MM-Conv, multimodal agents, ECCV, AI2-THOR, virtual humans, conversational dataset">
+
 
 <head>
     <meta charset="UTF-8">
@@ -80,8 +83,8 @@
 <section class="py-8 bg-gray-50">
     <div class="max-w-4xl mx-auto">
         <div class="flex justify-center space-x-4">
-            <img src="media/room227.png" alt="Image 2" class="w-64 h-48 object-cover"> <!-- Increased size -->
-            <img src="media/room222.png" alt="Image 2" class="w-64 h-48 object-cover"> <!-- Increased size -->
+            <img src="media/room227.png" alt="AI2-THOR simulator setup image 1" class="w-64 h-48 object-cover"> <!-- Increased size -->
+            <img src="media/room222.png" alt="AI2-THOR simulator setup image 2" class="w-64 h-48 object-cover"> <!-- Increased size -->
         </div>
     </div>
 </section>
@@ -104,6 +107,18 @@
                 </div>
             </div>
         </section>
+    <script>
+        document.querySelector('.hover-data').addEventListener('mouseenter', function() {
+            this.textContent = 'Soon';
+            this.style.backgroundColor = 'gray';
+            this.style.color = 'white';
+        });
+        document.querySelector('.hover-data').addEventListener('mouseleave', function() {
+            this.textContent = 'Data';
+            this.style.backgroundColor = '';
+            this.style.color = '';
+        });
+    </script>
 </body>
 
 </html>
